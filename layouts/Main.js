@@ -5,7 +5,9 @@ import Footer from '../components/Footer'
 import '../styles/sass/styles.scss'
 export default ({ children, title = 'Dy La Fuente - Personal Trainer'}) => (
     <>
-    <Sidebar />
+    <div className="header-nav">
+        <Sidebar />
+    </div>
     <div id="main" className="container">
         <Head>
             <meta charSet="utf-8"/>

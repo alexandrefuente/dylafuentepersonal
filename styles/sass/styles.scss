@@ -490,7 +490,8 @@ body {
 }
 
 @media screen and (max-width: 1024px) {
-  .bm-burger-button {
+  
+  .header-nav, .bm-burger-button {
     display: block !important;
   }
   .nav {
@@ -637,8 +638,8 @@ body {
   position: fixed;
   width: 36px;
   height: 30px;
-  left: 36px;
-  top: 36px;
+  left: 12px;
+  top: 16px;
 }
 
 /* Color/shape of burger icon bars */
@@ -700,3 +701,15 @@ Note: Beware of modifying this element as it can break the animations - you shou
 }
 
 /* HOME END */
+
+.header-nav {
+  display: none;
+  background: #ffffff;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.45);;
+  height: 65px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
