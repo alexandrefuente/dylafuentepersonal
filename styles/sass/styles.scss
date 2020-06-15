@@ -562,11 +562,12 @@ body {
     text-overflow: ellipsis;
     overflow: hidden;
     height: 4rem;
-    white-space: pre-wrap;
+    white-space: nowrap;
+    width: 305px;
   }
   .actions-about {
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   }
   .list-services {
     flex-direction: column;
