@@ -58,6 +58,11 @@ body {
 
 /* End Page Performace */
 
+.focus {
+  background: #EF8218;
+  color: #ffffff;
+  padding: 2px 5px;
+}
 
 .primary-title-all-site {
   font-weight: 900;
@@ -209,7 +214,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   border: 2px solid #900;
   cursor: pointer;
-  height: 45px;
+  height: 35px;
   width: 142px;
   text-align: center;
   background: #ffffff;
@@ -218,8 +223,19 @@ body {
   font-weight: 600;
 }
 
+.btn-more:hover {
+  background: #900;
+  color: #ffffff;
+  // transform: translate(10px,10px);
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
 .play-about {
   margin-left: 20px;
+  margin-top: -1px;
   cursor: pointer;
 }
 
@@ -389,7 +405,7 @@ body {
         color: #ffffff;
         cursor: pointer;
         font-size: 16px;
-        height: 45px;
+        height: 35px;
         margin: 0 auto;
         text-align: center;
         width: 170px;
@@ -443,7 +459,7 @@ body {
         cursor: pointer;
         font-size: 16px;
         font-weight: 600;
-        height: 45px;
+        height: 35px;
         margin-top: 30px;
         text-align: center;
         width: 170px;
@@ -473,11 +489,12 @@ body {
     .mission-item {
       flex: 1;
       h3 {
+        color: #900;
         font-size: 25px;
         text-align: center;
       }
       img {
-        margin: 15px auto;
+        margin: 25px auto 15px auto;
         display: block;
       }
       p {
@@ -485,6 +502,37 @@ body {
         text-align: center;
         line-height: 25px;
       }
+    }
+  }
+}
+
+.service-page {
+  .service {
+    cursor: pointer;
+  }
+  .service:hover {
+    background: #E8E8E8;
+    & .service-img {
+      background: #EF8218;
+    }
+  }
+}
+.service-info {
+  display: flex;
+  align-items: center;
+  margin-top: 35px;
+  margin-left: 60px;
+  .service-info-column {
+    flex: 1;
+    padding: 20px;
+    h3 {
+      font-size: 25px;
+      font-weight: 600;
+      text-align: right;
+    }
+    p {
+      font-size: 16px;
+      line-height: 1.6rem;
     }
   }
 }
@@ -502,7 +550,7 @@ body {
     margin-top: -30px;
     width: fit-content;
   }
-  .about {
+  .about, .service-page {
     margin-top: 80px;
   }
   #page-container {
@@ -549,7 +597,7 @@ body {
     flex-direction: column;
     .photo-exercises .text-exercises {
       height: 200px;
-      width: 390px;
+      width: 290px;
     }
   }
   .primary-title {
@@ -571,6 +619,12 @@ body {
   }
   .list-services {
     flex-direction: column;
+    .service { 
+      margin: 30px 0;
+      .service-text h3 {
+        margin: 15px 0;
+      }
+    }
   }
   .follow {
     padding-left: 0;
@@ -595,12 +649,26 @@ body {
     margin-top: 20px;
   }
   .about {
+    strong {
+      text-align: center;
+    }
     .mission {
       flex-direction: column;
+      .mission-item {
+        margin: 30px 12px;
+      }
     }
     .align-content {
       margin-left: 0;
       padding: 12px;
+    }
+  }
+  .service-info {
+    flex-direction: column;
+    margin-left: 20px;
+    .service-info-column p {
+      text-align: center;
+      line-height: 1.6rem;
     }
   }
 }

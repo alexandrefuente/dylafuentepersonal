@@ -4,7 +4,9 @@ const About = () => {
         <Layout title="Sobre Dy La Fuente Personal Trainer">
             <div className="about">
                 <div>
-                    <h1 className="primary-title-all-site center-text">Dy La Fuente Personal Trainer</h1>
+                    <h1 className="primary-title-all-site center-text">
+                        <span className="focus">Dy La Fuente</span> Personal Trainer
+                    </h1>
                     <div className="align-content">
                         <p>
                             É um projeto que tem como objetivo oferecer um serviço especializado para realização, de atividades
