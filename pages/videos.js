@@ -1,10 +1,11 @@
 import Layout from '../layouts/Main'
 import ReactPlayer from 'react-player/lazy'
 
+
 const Videos = () => {
     return (
         <Layout title="Vídeos - Dy La Fuente Personal Trainer">
-             <div className="videos-page">
+            <div className="videos-page">
                 <h1 className="primary-title-all-site center-text">
                     Acompanhe todos o <span className="focus">vídeos</span>
                 </h1>
@@ -44,7 +45,7 @@ const Videos = () => {
                         </div>
                     </div>
                 </div>
-             </div>
+            </div>
         </Layout>
     )
 }

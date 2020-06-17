@@ -1,12 +1,19 @@
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import Nav from '../components/Nav'
 import Sidebar from '../components/Nav/Sidebar'
+import NavCategory from '../components/Nav/NavCategory'
 import Footer from '../components/Footer'
 import '../styles/sass/styles.scss'
-export default ({ children, title = 'Dy La Fuente - Personal Trainer'}) => (
+
+
+export default ({ children, title = 'Dy La Fuente - Personal Trainer'}) => {
+    const router = useRouter()
+    return (
     <>
     <div className="header-nav">
         <Sidebar />
+        { router.pathname === '/videos' && <NavCategory /> }
     </div>
     <div id="main" className="container">
         <Head>
@@ -49,4 +56,5 @@ export default ({ children, title = 'Dy La Fuente - Personal Trainer'}) => (
         </div>
     </div>
     </>
-)
+    )
+}

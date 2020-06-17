@@ -560,6 +560,7 @@ body {
     h3 {
       height: 45px;
       background: #EF8218;
+      border-radius: 0 10px 0 0;
       color: #ffffff;
       margin-top: 20px;
       padding: 10px 0;
@@ -568,7 +569,8 @@ body {
     }
     .list-category ul {
       list-style: none;
-      border-bottom: 1px solid #EF8218;
+      border: 2px solid #EF8218;
+      border-radius: 0 0 10px 10px;
       padding: 15px 0;
       li {
         cursor: pointer;
@@ -613,7 +615,15 @@ body {
   }
   .videos {
     flex-direction: column;
-    margin-left: 0;
+    .list-videos {
+      .item-video {
+        width: 100%;
+        height: 300px;
+      }
+    }
+    .category-videos {
+      display: none;
+    }
   }
 }
 
@@ -723,9 +733,11 @@ body {
     }
   }
   .videos{
-    .videos .list-videos .item-video {
-      width: 95%;
-      height: 200px;
+    .list-videos {
+      .item-video {
+        width: 98%;
+        height: 200px;
+      }
     }
     .category-videos {
       display: none;
@@ -761,13 +773,39 @@ body {
     }
   }
 }
+.nav-mobile-category {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  ul {
+    list-style: none;
+    margin-top: 20px;
+    li {
+      padding: 20px 0;
+      a {
+        color: #ffffff;
+        text-decoration: none;
+      }
+    }
+  }
+
+}
 /* Position and sizing of burger button */
-.bm-burger-button {
+.menu-left .bm-burger-button {
   display: none;
   position: fixed;
   width: 36px;
   height: 30px;
   left: 12px;
+  top: 16px;
+}
+
+.menu-right .bm-burger-button {
+  display: none;
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 16px;
   top: 16px;
 }
 
