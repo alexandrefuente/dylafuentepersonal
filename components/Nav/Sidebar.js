@@ -28,11 +28,11 @@ const Sidebar = () => {
                             <a>Vídeos</a>
                         </Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link href="/dicas">
                             <a>Dicas</a>
                         </Link>
-                    </li>
+                    </li> */}
                     <li>
                         <Link href="/contato">
                             <a>Contato</a>

@@ -537,6 +537,53 @@ body {
   }
 }
 
+.videos {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 20px;
+  .list-videos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 3;
+    .item-video {
+      margin: 20px 0;
+      flex: 1 auto;
+      width: 80%;
+      height: 325px;
+    }
+  }
+  .category-videos {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    h3 {
+      height: 45px;
+      background: #EF8218;
+      color: #ffffff;
+      margin-top: 20px;
+      padding: 10px 0;
+      text-align: center;
+      width: 100%;
+    }
+    .list-category ul {
+      list-style: none;
+      border-bottom: 1px solid #EF8218;
+      padding: 15px 0;
+      li {
+        cursor: pointer;
+        text-align: center;
+        height: 35px;
+        padding: 7px 0;
+        &:hover {
+          background: #EF8218;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 1024px) {
   
   .header-nav, .bm-burger-button {
@@ -550,7 +597,7 @@ body {
     margin-top: -30px;
     width: fit-content;
   }
-  .about, .service-page {
+  .about, .service-page, .videos-page {
     margin-top: 80px;
   }
   #page-container {
@@ -563,6 +610,10 @@ body {
   .bio-photo {
     padding: 0 50px 0 0;
     margin-top: 80px;
+  }
+  .videos {
+    flex-direction: column;
+    margin-left: 0;
   }
 }
 
@@ -669,6 +720,15 @@ body {
     .service-info-column p {
       text-align: center;
       line-height: 1.6rem;
+    }
+  }
+  .videos{
+    .videos .list-videos .item-video {
+      width: 95%;
+      height: 200px;
+    }
+    .category-videos {
+      display: none;
     }
   }
 }
